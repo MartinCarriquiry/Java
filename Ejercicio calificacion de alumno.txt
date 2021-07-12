@@ -1,0 +1,24 @@
+public class TiposPrimitivos {
+
+    public static void main(String args[]) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Indique calificacion de alumno: ");
+        var calificacion = Integer.parseInt(scanner.nextLine());
+        
+        if (calificacion > 9 && calificacion <= 10){
+            System.out.println("la calificacion del alumno es de: A");
+        }else if(calificacion > 8 && calificacion < 9){
+            System.out.println("la calificacion del alumno es de: B");
+        }else if (calificacion >= 7 && calificacion < 8){
+            System.out.println("la calificacion del alumno es de: C");
+        }else if (calificacion >6 && calificacion <7){
+            System.out.println("la calificacion del alumno es de: D");
+        }else if (calificacion <= 6){
+            System.out.println("la calificacion del alumno es de: F");
+        }else{
+            System.out.println("Valor desconocido");
+        }
+       
+    }
+
+}

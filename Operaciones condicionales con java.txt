@@ -1,0 +1,39 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tiposprimitivos;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Usuario
+ */
+public class TiposPrimitivos {
+
+    public static void main(String args[]) {
+        var a  = 10;
+        var valorMinimo = 0;
+        var valorMaximo = 10;
+        
+        var resultado = a >= valorMinimo && a <= valorMaximo;
+        System.out.println("resultado = " + resultado);
+        
+        var vacaciones = true;
+        var diaDescanso = false ;
+        
+        if (vacaciones || diaDescanso){ // con valores OR (||) con que uno sea verdadero, todo sera verdaderpo
+            System.out.println("puede ir a pasear");
+        } else {
+            System.out.println("no puede ir, asi que a laburar ");
+        }
+            
+        
+        
+        
+        
+    }
+
+}

@@ -1,0 +1,31 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tiposprimitivos;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Usuario
+ */
+public class TiposPrimitivos {
+
+    public static void main(String args[]) {
+        // precedencia de poperadores, osea prioridades papu
+      Scanner scanner = new Scanner(System.in);
+        System.out.println("Indique un valor numerico: ");
+        var num1 = Integer.parseInt(scanner.nextLine());
+        System.out.println("Indique otro valor numerico: ");
+        var num2 = Integer.parseInt(scanner.nextLine());
+        
+        if (num1 > num2){
+            System.out.println("el numero mayor es: " + num1);
+        }else {
+            System.out.println("el numero mayor es " + num2 );
+        }
+    }
+
+}

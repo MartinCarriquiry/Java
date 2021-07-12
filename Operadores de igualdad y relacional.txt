@@ -1,0 +1,58 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tiposprimitivos;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Usuario
+ */
+public class TiposPrimitivos {
+    
+    public static void main(String args[]) {
+       var a = 3;
+       var b = 2;
+       
+       var c = (a == b);
+        System.out.println("c = " + c);// devuelve un valro falso
+        
+        var d = (a != b);
+        System.out.println("d = " + d);// devuelve un valor true
+        
+        var cadena = "Hola";
+        var cadena2 = "adios";
+        var e = cadena == cadena2;// compara referencias de objetos 
+        System.out.println("e = " + e);
+        
+        var f = cadena.equals(cadena2);// comprueba si contiene la misma cadena de caracteres cadena y cadena2
+        System.out.println("f = " + f);// es falso
+        
+        
+       var g = a >= b;// mayor que > o el mayor o igual >=
+        System.out.println("g = " + g);
+
+        if (a % 2 == 0) { 
+            System.out.println("es par");
+        } else {
+            System.out.println("es impar");
+        }
+        
+        var edad = 30 ; 
+        var adulto = 18; 
+        if (edad >= adulto) {
+            System.out.println("es adulto");
+        }else {
+            System.out.println("es niño");
+        }
+        
+   
+        
+        
+        
+    }
+    
+}

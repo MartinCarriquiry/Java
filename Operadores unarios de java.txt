@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Usuario
+ */
+public class TiposPrimitivos {
+    
+    public static void main(String args[]) {
+        
+        var a = 3;
+        var b = -a;
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+        
+        var c = true; 
+        var d = !c;
+        System.out.println("d = " + d);
+        System.out.println("c = " + c); 
+        
+        // incremento 
+        // pre incremento ( simbolo antes de la variable) 
+        var e = 3;
+        System.out.println("e = " + e);
+        var f = ++e;//
+        //primero se incrementa la variable y despues se usa su valor
+        
+        System.out.println("f = " + f);
+        
+        // postincremento (Simbolo despues de la variable)=
+        var g = 5;
+        var h = g++; // primeor se utiliza el valor y despues se incrementa
+        System.out.println("g = " + g);
+        System.out.println("h = " + h);
+        
+        // decremento 
+        //1 predecremento
+        var i = 2;
+        var j = --i;
+        System.out.println("i = " + i);
+        System.out.println("j = " + j);
+        
+        //PostDecremento
+        var k = 4;
+        var l = k--;// primero se usa el valor de la variable y queda pendiente decremnto
+        System.out.println("k = " + k);//tenia pendiente un decremento  
+        System.out.println("l = " + l);//muestra el resultado de K antes del cambio

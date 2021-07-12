@@ -1,0 +1,32 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tiposprimitivos;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Usuario
+ */
+public class TiposPrimitivos {
+
+    public static void main(String args[]) {
+       // operador ternario, su nombre se debe a que se encuentra dividido en 3 partes
+       var resultado = (3 > 2) ? "verdadero" : "falso" ;
+        System.out.println("resultado = " + resultado);
+        
+        var resultado1 = (1 > 2) ? "verdadero" : "falso" ;
+        System.out.println("resultado1 = " + resultado1);
+       
+       var numero = 8; 
+       resultado = (numero % 2 == 0)? "numero par" : "Impar";
+        System.out.println("resultado = " + resultado);
+        
+        
+        
+    }
+
+}

@@ -1,0 +1,20 @@
+package clases;
+
+
+public class PruebaPersona {
+    public static void main(String[] args) {// psvm + tab
+        Persona persona1 = new Persona();
+        persona1.nombre = "Martin";
+        persona1.apellido = "Carriquiry";
+        persona1.desplegarInformacion();
+        
+        Persona persona2 = new Persona();
+        System.out.println("persona1 = " + persona1);
+        System.out.println("persona2 = " + persona2);
+        
+        persona2.desplegarInformacion();
+        persona2.nombre = "karla";
+        persona2.apellido = "anda";
+        persona2.desplegarInformacion();
+    }
+}
