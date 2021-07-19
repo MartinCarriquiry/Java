@@ -1,0 +1,32 @@
+package operaciones;
+
+public class Aritmetica {
+    int a; 
+    int b;
+    //constructor vacio
+    public Aritmetica(){
+        System.out.println("Ejecutando constructor");
+    }
+    
+    public Aritmetica(int a, int b){ // no se permite utilizar var en los argumentos
+        this.a = a;
+        this.b = b;
+        System.out.println("Resultado");
+    }
+    
+    //metodo
+    public void sumar(){
+       int resultado = a + b;
+        System.out.println("resultado = " + resultado);
+    }
+    public int sumarConRetorno () {
+//        int resultado = a + b;
+//        return resultado;
+        return a + b; // podemos hacer lo mismo en una sola linea
+    }
+    public int sumarConArgumentos(int arg1, int arg2) {
+        this.a = arg1;// con this sabemos que es un atributo de nuestra clase
+        this.b = arg2;
+        //return a + b;
+        return sumarConRetorno();
+    }

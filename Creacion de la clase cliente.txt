@@ -1,0 +1,49 @@
+package domain;
+import java.util.Date;
+
+public class Cliente extends Persona{
+    private int idCliente;
+    private static int contadorCliente;
+    private Date fechaRegistro;
+    private boolean isVip;
+    
+    public Cliente(Date fechaRegistro, boolean isVip, String nombre, char genero
+     , int edad, String direccion){
+        super(nombre, genero, edad, direccion);
+        this.idCliente = ++Cliente.contadorCliente;
+        this.fechaRegistro = fechaRegistro;
+        this.isVip = isVip;
+    }
+
+    public int getIdCliente() {
+        return idCliente;
+    }
+   
+    public Date getFechaRegistro() {
+        return fechaRegistro;
+    }
+
+    public void setFechaRegistro(Date fechaRegistro) {
+        this.fechaRegistro = fechaRegistro;
+    }
+
+    public boolean isIsVip() {
+        return isVip;
+    }
+
+    public void setIsVip(boolean isVip) {
+        this.isVip = isVip;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Cliente{idCliente=").append(idCliente);
+        sb.append(", fechaRegistro=").append(fechaRegistro);
+        sb.append(", isVip=").append(isVip);
+        sb.append('}');
+        return sb.toString();
+    }
+    
+    
+}

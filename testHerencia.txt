@@ -1,0 +1,17 @@
+package test;
+
+import domain.Empleado;
+import domain.Cliente;
+import java.util.Date;
+
+public class TestHerencia {
+    public static void main(String[] args) {
+
+    Cliente cliente1 = new Cliente(new Date(), false, "Martin", 'M', 26, "Montevideo 1484");
+        System.out.println ("cliente1 = " + cliente1);
+    
+    }
+}
+
+    
+}
