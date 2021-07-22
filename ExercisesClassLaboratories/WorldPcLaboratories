@@ -1,0 +1,36 @@
+package mundopc;
+
+import dispositivos.*;
+
+public class MundoPC {
+    public static void main(String[] args) {
+        Monitor monitorHP = new Monitor("HP", 13);
+        Teclado tecladoHP = new Teclado("bluetooth", "HP");
+        Raton ratonHP = new Raton("bluetooth", "HP");
+        Computadora computadoraHP = new Computadora("computadora HP", monitorHP, tecladoHP, ratonHP);
+        
+        Monitor monitorGamer = new Monitor("Gamer", 34);
+        Teclado tecladoGamer = new Teclado("bluetooth", "Gamer");
+        Raton ratonGamer = new Raton("bluetooth", "Gamer");
+        Computadora computadoraGamer = new Computadora("computadora Gamer", monitorGamer, tecladoGamer, ratonGamer);
+        
+        Monitor monitorLogitech = new Monitor("Logitech", 19);
+        Teclado tecladoLogitech = new Teclado("con cable", "Logitech");
+        Raton ratonLogitech = new Raton("con cable", "Logitech");
+        Computadora computadoraLogitech = new Computadora("Logitech", monitorLogitech, tecladoLogitech, ratonLogitech);
+        
+        Orden orden1 = new Orden();
+        orden1.agregarComputadora(computadoraHP);
+        orden1.agregarComputadora(computadoraGamer);
+        orden1.agregarComputadora(computadoraLogitech);
+        
+        
+        Orden orden2 = new Orden();
+        orden2.agregarComputadora(computadoraLogitech);
+        orden2.agregarComputadora(computadoraLogitech);
+        
+        
+        orden1.mostrarOrden();
+        orden2.mostrarOrden();
+    }
+}
