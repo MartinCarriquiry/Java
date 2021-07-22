@@ -1,0 +1,21 @@
+package dispositivos;
+
+//import dispositivos.*;
+
+public class Teclado extends DispositivoEntrada{
+
+    private int idTeclado;
+    private static int contadorTeclados;
+
+    public Teclado(String tipoEntrada, String marca) {
+        super(tipoEntrada, marca);// tenemos que llamar al objeto padre
+        this.idTeclado = ++Teclado.contadorTeclados;
+
+    }
+
+    @Override
+    public String toString() {
+        return "Teclado{" + "idTeclado=" + idTeclado + '}';
+    }
+
+}
