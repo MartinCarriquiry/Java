@@ -1,0 +1,31 @@
+package domain;
+
+public class Persona {
+    private final int idPersona;
+    private static int contadorPersonas;
+    
+    static{// esto es un bloque estatico
+        System.out.println("Ejecucion bloque estatico");
+        ++Persona.contadorPersonas;
+    }
+    
+    {//esto es un bloque de inicializacion no estatico
+        System.out.println("Ejecucuion bloque no estatico");
+        this.idPersona = Persona.contadorPersonas++;
+    }// se va a ejecutar cada vez que creemos un objeto
+    
+    public Persona(){
+        System.out.println("Ejecucion del constructor");
+    }
+
+    public int getIdPersona() {
+        return idPersona;
+    }
+
+    @Override
+    public String toString() {
+        return "Persona{" + "idPersona=" + idPersona + '}';
+    }
+    
+    
+}
