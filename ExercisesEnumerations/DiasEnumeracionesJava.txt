@@ -1,0 +1,11 @@
+package enumeracion;
+
+public enum Dias { // en enumeracion la clase pasa a llamarse enum
+    LUNES, 
+    MARTES,
+    MIERCOLES,
+    JUEVES,
+    VIERNES,
+    SABADO,
+    DOMINGO
+}
