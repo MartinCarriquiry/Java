@@ -1,0 +1,9 @@
+package PeliculasOnline.Excepciones;
+
+public class AccesoDatosEx extends Exception {
+    public AccesoDatosEx(String mensaje){ // constructor
+        super(mensaje);
+    }
+    
+       
+}
