@@ -1,0 +1,77 @@
+Crear el archivo txt
+
+el primner paquete a crear es de excepciones paquete nombre. mx.com.gm.peliculas.excepciones
+excepciones dentro del paquete: 
+-AccesoDatosEx(clase)
+-EscrituraDatosEx(clase)
+-LecturaDatosEx(clase)
+
+Paquete con las clases de domain con nombre: mx.com.gm.peliculas.domain
+-Pelicula(clase):
+Atributo
+-nombre: String del tipo privado
+Dos constructores:
+-Pelicula() = Constructor vacio() de tipo public
+-Pelicula(nombre:String)
+-agregar el metodo getNombre():String y setNombre(nombre: String)
+-toString():String
+
+Paquete mx.com.gm.peliculas.datos
+-Crear una Interfaz acceso datos(Interfaz):
++existe(nombreArchivo: String):boolean
++listar(nombre: String):List<Pelicula>
++escribir(pelicula: Pelicula, nombreArchivo: String, anexar: boolean):void
++buscar(nombreArchivo:String, buscar:String):String
++crear(nombreArchivo: String): void
++borrar(nombreArchivo: String):void
+
+responsabilidades: contiene las operaciones a devolver en el archivo txt
+
+-AccesoDatosImpl(clase) // en el se guardara la informacion de catalogos de peliculas
+
+Paquete mx.com.gm.peliculas.negocios
+-crear interfaz CatalogoPeliculas(interfaz):
++agregarPelicula(nombrePelicula: String, nombreArchivo: String) : void
++listarPeliculas(nombreArchivo: String) : void
++buscarPelicula(nombreArchivo: String, buscar: String) : void
++iniciarArchivo(nombreArchivo: String): void
+responsabilidad: contiene las operaciones necesarias de la aplicacion Catalogo Peliculas
+-CatalogoPeliculasImpl(clase)// aplicar las rteglas de negocio de nuestra aplicacion:
+atributo: 
+datos: AccesoDatos
++CatalogoPeliculasImpl()
++agregarPelicula(nombrePelicula: String, nombreArchivo: String): void
++listarPeliculas(nombreArchivo: String):void
++buscarPelicula(nombreArchivo: String, buscar: String): void
++iniciarArchivo(nombreArchivo: String):void
+responsabilidades: contiene las implementacion de las operaciones necesarias de la aplicacion catalogopeliculas
+
+Clase main
+
+
+
+Paquete cpjlaboratoriofinal
+-CPJLaboratorioFinal ( clase)
+Scanner ; java.util.Scannner
+opcion: int // es la que ayudara a selleccionar las opciones para el usuario
+nombreArchivo: String
+catalogoPeliculas: CatalogoPeliculas
+
++main (args: String[]):void
+Responsabilidades
+contiene el menu que permite al usuario seleccionar la accion a ejectutar el catalogo de peliculas
+
+EL meno:
+1- Iniciar catalogo peliculas
+2 - Agregar pelicula
+3 - Listar peliculas
+4- Buscar pelicula
+0- salir
+
+2:
+Introduce el nombre de una pelicula a agregar:
+batman
+Se ha escrito correctamente al archivo
+3:
+Pelicula: batman
+
